@@ -1,0 +1,11 @@
+.navbar{
+    text-decoration: wavy;
+    background-color: black;
+    color: blanchedalmond;
+}
+.h-100 {
+    float: left;
+}
+.searchText {
+    padding: 1rem;
+}
