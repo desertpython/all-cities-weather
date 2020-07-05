@@ -9,7 +9,7 @@
 .searchText {
     padding: 1rem;
 }
-.adjust{
+.containerA{
     display: flex;
     justify-content: space-evenly;
 }
