@@ -8,7 +8,7 @@ $(".search_icon").on("click",function(){
     var lat = cityData.lat
     var lon = cityData.lon
     console.log(cityData);
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=" + cityData + "&units=imperial&appid&appid=6bc6be181023384e301d45eee4f5659e")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + cityData + "&units=imperial&appid&appid=6bc6be181023384e301d45eee4f5659e")
     .then(response => response.json())
     .then(data => {console.log(data.main)
         cardText.innerHTML = "Temperarture is " +  data.main.temp + " F"
@@ -68,7 +68,7 @@ $(".search_icon").on("click",function(){
 })
 
 function getUVindex(lon, lat){
-    fetch("http://api.openweathermap.org/data/2.5/uvi?appid=&lat"+ lat + lon)
+    fetch("https://api.openweathermap.org/data/2.5/uvi?appid=&lat"+ lat + lon)
     .then(repsonseii => repsonseii.json()
     .then(dataii => {console.log(dataii)}));
 
